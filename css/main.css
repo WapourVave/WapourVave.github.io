@@ -413,6 +413,15 @@ footer p
     }
 }
 
+/* You have no idea how time consuming scaling is */
+@media screen and (min-width: 390px)
+{
+    .logo h1
+    {
+        margin-left: 17%;
+    }
+}
+
 /* You get the idea */
 @media screen and (min-width: 422px)
 {
@@ -421,12 +430,18 @@ footer p
         margin-left: 20%; 
     }
     
-
     .aboutme h2
     {
         margin-left: 30%;
     }
 }
+
+@media screen and (min-width: 455px)
+{
+    .logo h1
+    {
+        margin-left: 24%; 
+    }
 
 @media screen and (min-width: 514px)
 {
@@ -670,11 +685,7 @@ footer p
     {
         padding-bottom: 21%;
     }
-}
-
-/* Image Scaling 03 */
-@media screen and (min-width: 1918px)
-{
+    
     .fbltext
     {
         padding-bottom: 4%;
