@@ -21,11 +21,11 @@ body
 /* This is gonna look fancy */
 .logo
 {
-    padding-top: 30%;
+    padding-top: 35%;
     padding-bottom: 20%;
-    background-image: url(/images/home/home_showcase.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: url(/images/home/home_showcase.jpg);
     background-color: white;
     color: black;
 }
@@ -33,7 +33,7 @@ body
 .logo h1
 {
     font-size: 2em;
-    margin-left: 2%; 
+    margin-left: 4%; 
     position: relative;
     top: 30%;
     float: left;
