@@ -175,14 +175,25 @@ li a:hover
     border-top-style: solid;
     border-top-color: #1f1f1f;
     background-color: #252525;
-    color: #8f8f8f;
-    
+    color: #8f8f8f;    
 }
 
 .aboutme h2
 {
     margin-left: 23%;
     margin-top: 2%;
+}
+
+.aboutme a
+{
+    color: #8f8f8f;
+    text-decoration: none;
+}
+
+.aboutme a:hover
+{
+    color: #00fffc;
+    text-decoration: none;
 }
 
 .aboutme p
@@ -684,6 +695,11 @@ footer p
     .logo
     {
         padding-bottom: 21%;
+    }
+    
+    .logo h1
+    {
+        margin-right: 39%;
     }
     
     .fbltext
