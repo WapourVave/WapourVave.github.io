@@ -23,7 +23,7 @@ body
 {
     padding-top: 30%;
     padding-bottom: 20%;
-    background-image: url(/images/home/home_showcase.png);
+    background-image: url(/images/home/home_showcase.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: white;
@@ -357,7 +357,9 @@ footer p
 .slideshowdesc
 {
     margin-left: 1%;
-    margin-bottom: 1rem;
+    margin-right: 1%;
+    margin-top: 1%;
+    margin-bottom: 2%;
 }
 
 /*----MEDIA QUERIES----*/
