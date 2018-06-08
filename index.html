@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<!-- The version of HTML you wish to use. (This is the most current and standard version of HTML) -->
+<!-- Yes my portfolio is full of notes on how websites work, yes that is your fault for checking the developer tools and finding that out -->
+
+
+<html> <!-- All HTML code goes inside the HTML tag -->
+    
+    <head> <!-- Information about a file goes inside the HEAD tag -->
+        <title>Eden Pound's Portfolio</title>
+        <!-- Viewports used for overriding default viewport to use responsive styles, prevents site squash -->
+        <meta name="viewport" content="width=device-width", initial-scale="1">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="portfolio, eden, pound, eden pound, edenpound, game, games, videogames, video games, job, work, 3dsmax, 3ds max, ue4, unreal4, unreal 4, unreal, udk, Wapour, Vave, WapourVave, Wapour Vave">
+        <meta name="author" content="Eden Pound">
+        
+        <!-- Favicon goes here -->
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        
+        <!-- Fancy Discord Embed Thing -->
+        <meta property="og:title" content="Eden Pound's Portfolio">
+        <meta property="og:image" content="images/embed/EdenBot.png">
+        <meta property="og:description" content="I make video games, this is my site all about that!.">
+        <meta property="og:site_name" content="Home Page">
+        <meta property="og:url" content="https://wapourvave.github.io/">
+        <meta name="theme-color" content="#ff007e">
+        
+        <!-- CSS Imports -->
+        
+        <!-- Font Import -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <!-- Icon Library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Styling for the website -->
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+
+     </head>
+    
+    <body> <!-- All content you see on a webpage goes inside the BODY tag -->
+        <div class="container-fluid"> <!-- This contains all elements -->
+                
+            <header> <!-- Head of the page/top -->
+
+                <nav> <!-- Navigation Bar -->
+                    <div class="navbarname">
+                        <a href="#">Eden Pound</a>
+                    </div>
+                    <div class="navbar" id=navbarElement>
+                        <ul> 
+                            <!-- <ul> </ul> = Unordered list - See as bullet pointed content. -->
+                            <!-- <li> </li> = List - Listed content. -->
+                            <!-- <a> </a> = Anchor = Hyperlink. -->
+                            <!-- href = Hyper Reference - Website location. -->
+                            <!-- <li> </li> <a href="hyperlink.html">ContextText</a> -->
+                            <!-- <p> </p> = Paragraph/Text -->
+                            <li> <a href="index.html" class="active">Home</a> </li>
+                            <li> <a href="https://invite.gg/DarksydePhil">Discord</a> </li>
+                            <li> <a href="https://github.com/WapourVave">Github</a> </li>
+                            <li> <a href="mailto:edenpound@gmail.com">Email</a> </li>
+                            
+                            <!-- Adds the hamburger menu to the Nav Bar for mobile mode -->
+                            <a href="javascript:void(0);" class="icon" onclick="navBurger()">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                               
+                        </ul>
+                    </div>
+                </nav>
+                
+                <!-- Image with name in front of it -->
+                <div class="logo">
+                    <h1>Eden Pound</h1>
+                </div>
+                
+            </header>  
+            <!-- id - Effect seperate instance. -->
+            <!-- class - Effect multiple instances. -->
+            <!-- div = Divider - Seperates elements. -->
+            <div class="content">
+            
+                <div class="aboutme">
+                    <!-- <h1> </h1> = Header 1 -->
+                    <!-- <h2> </h2> = Header 2 -->
+                    <!-- <h?> <h?> = Header ? - The Header value keeps increasing for a variety of preset sizes -->
+                    <h2>About Me</h2> 
+                    <!-- An "about me" like paragraph of text should be found here, filling up the section and introducing the purpose of the website in a short and snappy like fashion. -->
+
+                        <!-- Lorem Ipsum is the text content random thing -->
+                        <p>So, you thought you'd just stumble along this page without me noticing? Well it don't work like that round these parts! My name is Eden, a video games enthusiast and developer in training, I enjoy both playing video games with people and the concept of making a video game others will love to play!</p>
+
+                </div>
+
+                <!-- 3DS Max -->
+                <div class="featurebox1"id=fb1>
+                    <div class="fbldiv">
+                        <a href="3dsmax.html"><img class="fblimage" id=fbli1 src="images/3dsmax/home_showcase.jpg" alt="3D Assets"></a>
+
+                    </div>
+                    
+                    <div class="fbltitle"id=fbt1>                         
+                        <h2><a href="3dsmax.html">3DS Max</a></h2>
+                    </div>
+                    
+                    <div class="fbltext">
+                            <p>3D asset development optimized for game engine's and scene creation is what I specialize in, creating high quality assets and enviroments by day, charcter rigging, skinning and animating by night. There's never a moment of the day were I don't have to have 3DS Max staring at me from my task bar, waiting...</p>
+                    </div>
+
+                </div>
+
+                <!-- Unreal 4 -->
+                <div class="featurebox2"id=fb2>
+                    <div class="fbrdiv">
+                        <a href="ue4.html"><img class="fbrimage" src="images/ue4/home_showcase.jpg" id=fbri1 alt="Unreal 4"></a>
+                    </div>
+                    
+                    <div class="fbrtitle"id=fbt2>                         
+                        <h2><a href="ue4.html">Unreal Engine 4</a></h2>
+                    </div>
+
+                    <div class="fbrtext">
+                            <p>When it comes to Unreal 4, I have a large array of skills varying between Blueprint development, sequence and character animation, scene development, practically everything you need for a good designer to get building and prototyping for a game concept. You name a concept and I can probably cook it up in a few hours.</p>
+                    </div>
+
+                </div>
+                
+                <!-- UDK -->
+                <div class="featurebox1"id=fb3>
+                    <div class="fbldiv">
+                        <a href="udk.html"><img class="fblimage" src="images/udk/home_showcase.jpg" id=fbli2 alt="UDK"></a>
+                        
+                    </div>
+
+                    <div class="fbltitle"id=fbt3>                         
+                        <h2><a href="udk.html">Unreal Development Kit</a></h2>
+                    </div>
+                    
+                    <div class="fbltext">
+                            <p>While knowledge remains limited, UDK was the testing grounds for my first level within the Unreal Engine and taught me design philosophies I still use now, as well as showcasing just how far I have come now in terms of skill level. UDK may be old, but the lessons I learnt about level design were valuable.</p>
+                    </div>
+
+                </div>
+
+                <!-- Photoshop -->
+                <div class="featurebox2"id=fb4>
+                    <div class="fbrdiv">
+                        <a href="photoshop.html"><img class="fbrimage" src="images/photoshop/home_showcase.jpg" id=fbri2 alt="Photoshop"></a>
+                    </div>
+                    
+                    <div class="fbrtitle"id=fbt4>                         
+                        <h2><a href="photoshop.html">Photoshop</a></h2>
+                    </div>
+
+                    <div class="fbrtext">
+                            <p>My skills within Photoshop range primarily with assisting in bigger projects, primarily image manipulation, creation of seamless textures and UV Mapping. Whether it be creating planning documentation for a building or a skydome for a video game, I've got Photoshops back as long as Photoshop has mine.</p>
+                    </div>
+
+                </div>            
+                
+                <!-- Game Maker -->
+                <div class="featurebox1"id=fb5>
+                    <div class="fbldiv">
+                        <a href="gamemaker.html"><img class="fblimage" src="images/gamemaker/home_showcase.jpg" id=fbli3 alt="Game Maker"></a>
+
+                    <div class="fbltitle"id=fbt5>                         
+                        <h2><a href="gamemaker.html">Game Maker</a></h2>
+                    </div>
+                        
+                    </div>
+
+                    <div class="fbltext">
+                            <p>My skills in Game Maker are simple, I can create video games, as the name suggests. Need sprite based assets? Yeah, I have them. Need a platformer with a 2D momentum based physics engine? Been there, done that. Need a game with.. You know were I'm going with this. I make games alright, its what I do.</p>
+
+                    </div>                
+
+                </div>
+                
+                <!-- Copyright Footer -->
+                <footer>
+                    <p>© Eden J Pound 2018</p>    
+                </footer>
+                    
+                
+                        
+                        
+                        
+                <!-- YouTube Video Embed --> 
+    <!--
+
+                <iframe width="560px" height="315px" src="https://www.youtube.com/embed/rg6CiPI6h2g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    -->
+
+                <!-- Audio File -->
+    <!--
+                <audio controls>
+                    <source src="sound/pokerap.mp3" type="audio/mpeg">
+                    Go away, your browser is out of date and you cannot listen to this audio file.
+                </audio>
+    -->
+            </div>  
+         </div>
+        <!-- JavaScript Imports -->      
+        
+        <!-- JQuery 3.3.1 -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <!-- Navburger JS -->
+        <script src="js/navburger.js"></script>
+        <!-- Image Hover -->
+        <script src="js/imghover.js"></script>
+        
+    </body>
+        
+</html>
