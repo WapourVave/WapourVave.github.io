@@ -74,8 +74,9 @@ a:hover
 
 #NavName
 {
-  padding-top: 10px;
-  padding-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 2px;
 }
 
 /* Change Padding-Top for NavBar Text Alignment */
@@ -327,15 +328,24 @@ a:hover
         display:block;
     }
 
+/*
     #Banner
     {
         padding-top: 56px;
     }
+*/
     
     #NavName
     {
         padding:10px;
     }
+    
+    /* Software Icons */
+    img[width="16px"]
+    {
+        width: 18px;
+        height: 18px;
+    }  
 }
 
 /* PC Start */
@@ -348,21 +358,17 @@ a:hover
     }
     
     /* Image Boi */
+/*
     #Banner
     {
         padding-top: 50px;
     }
+*/
     
     .borders
     {
         font-size: large;
-    }
-    
-    img[width="16px"]
-    {
-        width: 18px;
-        height: 18px;
-    }    
+    }  
 }
 
 /* When the NavBar becomes big */
