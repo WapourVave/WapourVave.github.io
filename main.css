@@ -168,10 +168,15 @@ a:hover
 /*--------BANNER--------*/
 
 /* Image Boi */
-#Banner
+.banner
 {
     padding-top: 55px;
     width: 100%;
+}
+
+#Banner2
+{
+    display: none;
 }
 
 /*--------CONTENT--------*/
@@ -289,20 +294,23 @@ a:hover
   -----------------------------------------*/
 
 /* Chromium Browsers Lowest Res */
-/*
 @media (min-width: 500px)    
 {
-
-}
-*/
-
-/* Make Site Centre Now Pls */
-@media (min-width: 500px)    
-{
+    /* Make Site Centre Now Pls */
     .Container
     {
         padding-left: 20%;
         padding-right: 20%;
+    }
+    
+    #Banner1
+    {
+        display: none;
+    }
+    
+    #Banner2
+    {
+        display: block;
     }
 }
 
