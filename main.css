@@ -295,6 +295,16 @@ a:hover
 }
 */
 
+/* Make Site Centre Now Pls */
+@media (min-width: 558px)    
+{
+    .Container
+    {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
 /* Tablets/iPad */
 @media (max-width: 768px)
 {
@@ -343,18 +353,10 @@ a:hover
         padding-top: 50px;
     }
     
-/*
-    .navbar
-    {
-        font-size: large;
-    }
-*/
-    
     .borders
     {
         font-size: large;
     }
-    
     
     img[width="16px"]
     {
