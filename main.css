@@ -1,596 +1,384 @@
+/*------------------------------
+  ------------------------------
+      Eden Pound's Portfolio
+  ------------------------------
+  ----------------------------*/
+
+/*-----------------------------------------
+  Global Variables
+  -----------------------------------------*/
+
+/* Cover the entire Doc */
+:root
+{
+    /* Background */
+    --NavBar-Background-Colour: #101010;
+    --Main-Background-Colour: #171717;
+    --Seperator-Colour: #383838;
+    --Border-Box-Colour: #BBBB;
+    
+    /* Neon Colours */
+    --Inner-Neon-Colour: #BCFFFF;
+    --Outline-Neon-Colour: #59FFDC;
+    --Inner-Hot-Colour: #FF007E;
+    --Outline-Hot-Colour: #FF007E;
+    
+    /* Text */
+    --Title-Text-Colour: #fff;
+    --Content-Text-Colour: #DCDDDE;
+    --LinkHovered-Text-Colour: #BCFFFF;
+    --Content-Text-Margin: 20px;
+}
+
+
 /*--------FONT STYLES--------*/
+
 /* These are the fonts we wanna use */
 body 
 {
+    /* Font Stuff */
     font-family: 'Open Sans', 'Roboto', serif;
-    font-size: 1.5em;
-    background-color: #252525;
+    /* Don't allow browser defaults to override us */
+    margin: 0;
+    background-color: var(--Main-Background-Colour); 
+/*
+    background: url(Images/Background/LoopingBackground.svg);
+    background-size: 20px;
+*/
 }
 
-/*--------CONTAINER---------*/
+/*--------NAVIGATION BAR--------*/
 
-/* Resets bootstraps default container fluid padding */
-.container-fluid
+/* Make sure the NavBar Icon doesn't stretch */
+* 
 {
-    padding-left: 0%;
-    padding-right: 0%;
+    box-sizing: border-box;
 }
 
-/*----------HEADER----------*/
 
-/* This is gonna look fancy */
-.logo
+a:hover
 {
-    padding-top: 30%;
-    padding-bottom: 20%;
-    background-image: url(/images/home/home_showcase.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: white;
-    color: black;
+    color: var(--LinkHovered-Text-Colour);
+    text-shadow: 0 0 5px var(--Outline-Neon-Colour);
 }
 
-.logo h1
-{
-    font-size: 2em;
-    position: relative;
-    top: 30%;
-    margin-left: 30%;
-    float: left;
-    color: white;
-    text-shadow: 2px 2px #000001;
-    
-}
-
-/*--------NAVIGATION-------*/
-
-/* Base styles the navigation bar */
-nav
-{
-    background: #131313;
-    color: #8f8f8f;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    z-index: 100;
-    position: fixed;
-    width: 100%;
-    border-bottom-width: thin;
-    border-bottom-style: solid;
-    border-bottom-color: #1f1f1f;
-    
-}
-
-/* Size for name */
-.navbarname
-{
-    margin-left: 5%;
-    margin-right: 0%;
-    padding-right: 1%;
-    padding-top: 0.3%;
-}
-
-/* Name on navbar */
-.navbarname a
-{
-    padding-top: 0%;
-    margin-bottom: 0%;
-    text-decoration: none;
-    color: #8f8f8f;
-}
-
-.navbarname a:hover
-{
-    color: #00fffc;
-    text-decoration: none;
-}
-
-/* Navbar List */
 .navbar
 {
-    padding-top: 0%;
-    padding-bottom: 0%;
-    padding-left: 50%;
-    padding-right: 0%;
-    margin-right: 0%;
-    display: block;
-    
+    background-color: var(--NavBar-Background-Colour);
+    color: var(--Content-Text-Colour);
+    position: fixed;
+    min-height:50px;
+    width:100%;
+    font-size: large;
 }
 
-/* Remove the bullet points */
-ul
+
+#NavName
 {
-    list-style-type: none; 
-    word-spacing: 1rem;
-    padding-left: 0%;
-    margin-bottom: 1%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-/* li = List as an element */
-li
+/* Change Padding-Top for NavBar Text Alignment */
+.navbar-menu
 {
-    display: inline;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-/* Highlight the current page on the list */
-.active
+#navbar-menu-link
 {
-    color: #00fffc;
+    display: inline-block;
 }
 
-/* List Before Hover */
-li a
+/* Auto Generated Nonsense */
+
+.navbar-items-c
 {
-    color: #8f8f8f;
-    text-decoration: none;
-/*    padding-right: 100%;    */
-/*    padding-left: 10%;*/
-/*    padding-bottom: 10%;*/
+  display:inline-block;
+  float:right;
 }
 
-/* List Hover/After */
-li a:hover
+.navbar-container
 {
-    color: #00fffc;
-    text-decoration: none;
+  max-width:1100px;
+  margin-top:0px;
+  margin-right:auto;
+  margin-bottom:0px;
+  margin-left:auto;
+  width:95%;
 }
-
-/* Hide the list so that the text can hide away in the navburger menu */
-.navbar a
+.navbar-container::after{
+  content:"";
+  clear:both;
+  display:block;
+}
+.navbar-brand{
+  vertical-align:top;
+  display:inline-block;
+  padding-top:5px;
+  padding-right:5px;
+  padding-bottom:5px;
+  padding-left:5px;
+  min-height:50px;
+  min-width:50px;
+  color:inherit;
+  text-decoration-line:none;
+  text-decoration-style:initial;
+  text-decoration-color:initial;
+}
+.navbar-menu-link
 {
-    display: none;
+  color:inherit;
+  text-decoration-line: none;
+  display:inline-block;
+  padding-top:10px;
+  padding-right:15px;
+  padding-bottom:10px;
+  padding-left:15px;
+}
+.navbar-burger{
+  margin-top:10px;
+  margin-right:0px;
+  margin-bottom:10px;
+  margin-left:0px;
+  width:45px;
+  padding-top:5px;
+  padding-right:10px;
+  padding-bottom:5px;
+  padding-left:10px;
+  display:none;
+  float:right;
+  cursor:pointer;
+  padding:5px 10px 5px 10px;
+}
+.navbar-burger-line{
+  padding-top:1px;
+  padding-right:1px;
+  padding-bottom:1px;
+  padding-left:1px;
+  background-color:white;
+  margin-top:5px;
+  margin-right:0px;
+  margin-bottom:5px;
+  margin-left:0px;
 }
 
-.navbar a.icon
+
+/*--------BANNER--------*/
+
+/* Image Boi */
+#Banner
 {
-    float: right;
-    display: block;
-    margin-right: 10%;
-    color:aliceblue;
+    padding-top: 55px;
 }
 
-/* This class is added to the navbar when it is clicked via JS, displaying the links vertically */
-.navbar.responsive 
+/*--------CONTENT--------*/
+
+/* Content Padding */
+.Container
 {
-    position: relative;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
-.navbar.responsive a.icon
+/* How should the Text Content be positioned? */
+.row
 {
-    float: right;
-    
+/*    display:table;*/
 }
 
-.navbar.responsive a
+/* Text Containers */
+#Text-Container
 {
-    float: none;
-    display: block;
-    text-align: left;
+    /* Bottom Borders */
+    border-bottom: solid 0.0625rem;
+    border-color: var(--Seperator-Colour);
 }
 
-/*--------LAYOUT--------*/
-
-/* About Me */
-.aboutme
-{    
-    border-top-width: thin;
-    border-top-style: solid;
-    border-top-color: #1f1f1f;
-    background-color: #252525;
-    color: #8f8f8f;
-}
-
-.aboutme h2
+/* How should Title Text look? */
+.heading
 {
-    margin-left: 5%;
+    color: var(--Title-Text-Colour); 
+    text-shadow: 0 0 5px var(--Outline-Neon-Colour);
 }
 
-.aboutme p
+/* How should content text look? */
+.paragraph , .borders
 {
-    margin-left: 1%;
-    margin-right: 1%;
+    margin: 0 0 0 0;
+    margin-bottom: var(--Content-Text-Margin);
+    color: var(--Content-Text-Colour);
 }
 
-/* Feature Boxes */
-
-/* Left */
-.featurebox1
+.Border-Container
 {
-    background-color: #363636;
-    border-bottom-width: thin;
-    border-bottom-style: solid;
-    border-bottom-color: #1f1f1f;
-    border-top-width: thin;
-    border-top-style: solid;
-    border-top-color: #1f1f1f;
+    margin-bottom: var(--Content-Text-Margin);
 }
 
-/* Change Colour when an image is highlighted */
-
-/* List Before Hover */
-.featurebox1 a
+/* Border Boxes Formatting */
+.borders
 {
-    color: #8f8f8f;
-    text-decoration: none;
+    /* Text Stuffs */
+    text-decoration-line: none;
+    display: inline-block;
+    /* Border Crap */
+    border: 2px solid;
+/*    border-color: var(--Border-Box-Colour);*/
+    border-color: var(--Inner-Neon-Colour);
+    box-shadow: 0 0 5px var(--Outline-Neon-Colour);
+    border-radius: 5px;
+    /* Padding */
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 7px;
+    padding-left: 7px;
+    /* Margin Border Positioning */
+    margin-right: 5px;
+    margin-left: 0px;
+    margin-bottom: 15px;
 }
-    
-/* List Hover/After */
-.featurebox1 a:hover
+
+/* Portfolio Boxes */
+.portfolioBoxes
 {
-    color: #00fffc;
-    text-decoration: none;
+    margin-bottom: 0px;
 }
 
-.featurebox1.hovered a
+#Text-Container .portfolioBoxes 
 {
-    color: #00fffc;
+    border-bottom: 0px;
 }
 
-.fblimage
-{
-    margin-top: 2%;
-    margin-left: 40%;    
-}
-
-.fbltitle
-{
-    margin-left: 17px;
-    color: #8f8f8f;
-    text-align: left;
-}
-
-.fbltext
-{
-    color: #8f8f8f;
-    text-align: left;
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-bottom: 2%;
-}
-
-.fbltext p
-{
-    margin-bottom: 0%;
-}
-
-/* Right */
-
-.featurebox2
-{
-    background-color: #252525;
-}
-
-/* List Before Hover */
-.featurebox2 a
-{
-    color: #8f8f8f;
-    text-decoration: none;
-}
-
-.featurebox2.hovered a
-{
-    color: #00fffc;
-}
-
-/* List Hover/After */
-.featurebox2 a:hover
-{
-    color: #00fffc;
-    text-decoration: none;
-}
-
-.fbrimage
-{
-    margin-top: 2%;
-    margin-left: 40%
-}
-
-.fbrtitle
-{
-    margin-left: 17px;
-    color: #8f8f8f;
-    text-align: left;
-}
-
-.fbrtext
-{
-    color: #8f8f8f;
-    text-align: left;
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-bottom: 2%
-}
-
-.fbrtext p
-{
-    margin-bottom: 0%;
-}
-
-.fbrtext h2
-{
-    margin-left: 5%;
-}
-
-/* Copyright Footer */
-footer
+.portfolioBoxes #Portfolio-Boxes-G1 , #Portfolio-Boxes-G2
 {
     text-align: center;
-    background-color: white;
-    color: black;  
-    position: absolute;
+}
+
+.portfolioBoxes .borders 
+{
+    margin-right: 0px;
+}
+
+.portfolioBoxes img
+{
     width: 100%;
-    bottom: 0p;
+    height: auto;
 }
 
-footer p
+/*--------COPYRIGHT FOOTER--------*/
+
+.copyright-footer
 {
-    margin: 1%;
-}
-
-/*--------MEDIA--------*/
-
-/* Rounded Content Box */
-.contentbox
-{
-    background: #363636;
-    color: #8f8f8f;
-    padding-top: 4%;
-    padding-bottom: 4%;
-}
-
-.contentborder
-{
-    background: #252525;
-    border-radius: 5px;
-    border-width: thin;
-    border-style: solid;
-    border-color: #1f1f1f;
-    width: 75%;
-    margin-left: 12%;    
-}
-
-.contentbox h2
-{
-    margin-left: 5%;
-    margin-bottom: .2rem;
-}
-
-/* About that Bootstrap Slideshow I owe'd ya */
-.slideshowdesc
-{
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-top: 1%;
-    margin-bottom: 2%;
-}
-
-/*----MEDIA QUERIES----*/
-
-
-/* Leave Mobile Mode */
-@media screen and (min-width: 848px)
-{
-    /* Navbar Stuff */
+    /* Div Background Stuff */
+    background-color: var(--NavBar-Background-Colour);
     
-    /* Brings back the Nav Bar for Desktop Users */
-    .navbar a
+    /* Font Stuff */
+    text-align: center;
+    font-size: large;
+    color: var(--Content-Text-Colour);
+    
+    /* Padding for Text */
+    padding-top: 10px;
+    padding-bottom: 10px;;
+}
+
+/*-----------------------------------------
+  RESOLUTION SCALING
+  -----------------------------------------*/
+
+/* Chromium Browsers Lowest Res */
+/*
+@media (min-width: 500px)    
+{
+
+}
+*/
+
+/* Tablets/iPad */
+@media (max-width: 768px)
+{
+  .navbar-burger{
+    display: block;
+  }
+  .navbar-items-c{
+    display: none;
+    width: 100%;
+  }
+  .navbar-menu{
+    width: 100%;
+  }
+  .navbar-menu-link{
+    display: block;
+  }
+  .cell
     {
-        display: block
+        width:100%;
+        display:block;
     }
-    
-    /* The navburger needs to go... */
-    .navbar a.icon
+
+    #Banner
     {
-        display: none;
+        padding-top: 56px;
     }
     
-    /* Base styles the navigation bar */
-    nav
+    #NavName
     {
-        background: #131313;
-        color: #8f8f8f;
-        z-index: 100;
-        position: fixed;
-        width: 100%;
-        border-bottom-width: thin;
-        border-bottom-style: solid;
-        border-bottom-color: #1f1f1f;
+        padding:10px;
     }
+}
 
-    /* Size for name */
-    .navbarname
+/* PC Start */
+@media (min-width: 768px)
+{
+    .Container
     {
-        margin-left: 5%;
-        margin-right: 0%;
-        padding-right: 1%;
-        padding-top: 0.3%;
-        width: 20%;
+        padding-left: 20%;
+        padding-right: 20%;
     }
     
-    /* Name on navbar */
-    .navbarname p
+    /* Image Boi */
+    #Banner
     {
-        padding-top: 0%;
-        margin-bottom: 0%;
+        padding-top: 50px;
     }
-
-    /* Navbar List */
+    
+/*
     .navbar
     {
-        padding-top: 0%;
-        padding-bottom: 0%;
-        padding-left: 0%;
-        padding-right: 10%;
-        float: right;
+        font-size: large;
+    }
+*/
+    
+    .borders
+    {
+        font-size: large;
     }
     
-    .navbar a
-    {
-        display: inline;
-    }
     
-    .navbar.responsive li a
+    img[width="16px"]
     {
-        display: inline;
-    }
+        width: 18px;
+        height: 18px;
+    }    
+}
 
-    /* li = List as an element */
-    li
+/* When the NavBar becomes big */
+@media (min-width: 900px) /* 769px */
+{
+    .portfolioBoxes #Portfolio-Boxes-G1 , #Portfolio-Boxes-G2
     {
-        display: inline;
-    }
-
-    /* List Before Hover */
-    li a
-    {
-        color: #8f8f8f;
-        text-decoration: none;
-    }
-
-    /* List Hover/After */
-    li a:hover
-    {
-        color: #00fffc;
-        text-decoration: none;
+        max-width: 49%;
+/*
+        margin-left: 2%;
+        margin-right: 2%;
+*/
+        display: inline-table;
     }
     
-    /* Hide's the navburger icon from plain sight */ 
-    .navbar .icon
-    {
-        display: none;
-    }
-    
-    /* Meanwhile, in the container... */
-    
-    /* Center the logo text */
-    .logo h1
-    {
-        margin-left: 40%;
-        font-size: 2em;
-    }
-    
-    /* Align the text with the boxes below */
-    .aboutme h2
-    {
-        margin-left: 170px;
-    }
-
-    
-    /* Make images left to right, side by side with text */
-    .fblimage
-    {
-        margin-left: 1%;
-        margin-right: 1%;
-        margin-top: 2%;
-        padding-top 1%;
-        padding-bottom: 1%;
-        float: left;
-    }
-
-    .fblt h2
-    {
-        text-align: left;
-        margin-left: 170px;
-    }
-        /* Now for the right side */
-        .fbrimage
+    #Portfolio-Boxes-G1
     {
         margin-right: 1%;
-        margin-left: 1%;
-        margin-top: 2%;
-        float: right;
-    }
-    
-    .fbrtext h2
-    {
-        text-align: right;
-        margin-right: 170px;
-    }
-    
-    /* Its me Gamer's, CSS from Black Mesa */
-    .pagename h2
-    {
-        margin-left: 70px;
-        margin-top: 5px;
-    }
-
-    .fbltitle
-    {
-        margin-left: 170px;
-        text-align: left;
-    }
-    
-    .fbrtitle
-    {
-        margin-right: 170px;
-        text-align: right;
-    }
-    
-    .slideshow
-    {
-        padding-left: 5%;
-        padding-right: 5%;
     }
 }
 
-/* Image Scaling 01 */
-@media screen and (min-width: 1316px)
-{    
-    .fbltext
-    {
-        padding-bottom: 1%;
-        padding-left: 1%;
-        padding-right: 
-    }
-    
-    .fbrtext
-    {
-        margin-bottom: 1%;
-    }
-    
-    /* More scaling UGHH */
-    .pagename h2
-    {
-        margin-left: 170px;
-    }
-
-    .logo h1
-    {
-        margin-left: 40%;
-        font-size: 3em;
-    }
-    
-/* Image Scaling 02 */
-@media screen and (min-width: 1877px)
-{
-    .fbltext
-    {
-        padding-bottom: 3%;
-    }
-    
-    .fbrtext
-    {
-        margin-bottom: 3%;
-    }
-}
-
-/* Logo Image Fit */
-@media screen and (min-width: 1918px)
-{
-    .logo
-    {
-        padding-bottom: 21%;
-    }
-}
-
-/* Image Scaling 03 */
-@media screen and (min-width: 1918px)
-{
-    .fbltext
-    {
-        padding-bottom: 4%;
-    }
-    
-    .fbrtext
-    {
-        padding-bottom: 4%
-    }
-}

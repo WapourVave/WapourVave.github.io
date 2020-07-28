@@ -1,231 +1,300 @@
 <!DOCTYPE html>
-<!-- The version of HTML you wish to use. (This is the most current and standard version of HTML) -->
-<!-- Yes my portfolio is full of notes on how websites work, yes that is your fault for checking the developer tools and finding that out -->
+<!-- Woah, what are you doing in here? This is where my funny code goes, its not for anyone to just go snooping around! >:^( -->
 
 
-<html> <!-- All HTML code goes inside the HTML tag -->
+<html> <!-- Website Time -->
     
-    <head> <!-- Information about a file goes inside the HEAD tag -->
+    <head> <!-- Website Info -->
         <title>Eden Pound's Portfolio</title>
         <!-- Viewports used for overriding default viewport to use responsive styles, prevents site squash -->
         <meta name="viewport" content="width=device-width", initial-scale="1">
         <meta charset="UTF-8">
-        <meta name="keywords" content="portfolio, eden, pound, eden pound, edenpound, game, games, videogames, video games, job, work, 3dsmax, 3ds max, ue4, unreal4, unreal 4, unreal, udk, Wapour, Vave, WapourVave, Wapour Vave">
+        <meta name="keywords" content="portfolio, eden, pound, eden pound, edenpound, game, games, videogames, video games, job, work, 3dsmax, 3ds max, ue4, unreal4, unreal 4, unreal, udk, Wapour, Vave, WapourVave, Wapour Vave, Photoshop, Affinity, Affinity Photo, Affinity Designer">
         <meta name="author" content="Eden Pound">
         
         <!-- Favicon goes here -->
-        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/manifest.json">
+        <link rel="apple-touch-icon" sizes="57x57" href="Images/Favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="Images/Favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="Images/Favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="Images/Favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="Images/Favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="Images/Favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="Images/Favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="Images/Favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="Images/Favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="Images/Favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Images/Favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="Images/Favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Images/Favicon/favicon-16x16.png">
+        <link rel="manifest" href="Images/Favicon/manifest.json">
         <meta name="msapplication-TileColor" content="#ff007e">
-        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
         <meta name="theme-color" content="#ff007e">
         
         <!-- Fancy Discord Embed Thing -->
         <meta property="og:title" content="Eden Pound's Portfolio">
-        <meta property="og:image" content="https://wapourvave.github.io/images/embed/EdenBot.png">
-        <meta property="og:description" content="I make video games, this is my site all about that!">
-        <meta property="og:site_name" content="Home Page">
+        <meta property="og:image" content="Images/Embed">
+        <meta property="og:description" content="I make Video Games, this is my site all about that!">
+        <meta property="og:site_name" content="Portfolio">
         <meta property="og:url" content="https://wapourvave.github.io/">
         <meta name="theme-color" content="#ff007e">
         
-        <!-- CSS Imports -->
+        <!-- CSS + JS Imports -->
         
+        <!-- Styling for the website -->
+        <link rel="stylesheet" type="text/css" href="main.css">
         <!-- Font Import -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
         <!-- Icon Library -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- Styling for the website -->
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-
-     </head>
-    
-    <body> <!-- All content you see on a webpage goes inside the BODY tag -->
-        <div class="container-fluid"> <!-- This contains all elements -->
-                
-            <header> <!-- Head of the page/top -->
-
-                <nav> <!-- Navigation Bar -->
-                    <div class="navbarname">
-                        <a href="#">Eden Pound</a>
+        
+        <!-- Navigation Bar -->
+        <div data-gjs="navbar" class="navbar">
+            <div class="navbar-container">
+                <a href="#HelloThere!" class="navbar-brand"><div id="NavName">Eden Pound</div></a>
+                <div id="ie2r" class="navbar-burger">
+                    <div class="navbar-burger-line">
                     </div>
-                    <div class="navbar" id=navbarElement>
-                        <ul> 
-                            <!-- <ul> </ul> = Unordered list - See as bullet pointed content. -->
-                            <!-- <li> </li> = List - Listed content. -->
-                            <!-- <a> </a> = Anchor = Hyperlink. -->
-                            <!-- href = Hyper Reference - Website location. -->
-                            <!-- <li> </li> <a href="hyperlink.html">ContextText</a> -->
-                            <!-- <p> </p> = Paragraph/Text -->
-                            <li> <a href="index.html" class="active">Home</a> </li>
-                            <li> <a href="https://invite.gg/DarksydePhil">Discord</a> </li>
-                            <li> <a href="https://github.com/WapourVave">Github</a> </li>
-                            <li> <a href="mailto:edenpound@gmail.com">Email</a> </li>
-                            
-                            <!-- Adds the hamburger menu to the Nav Bar for mobile mode -->
-                            <a href="javascript:void(0);" class="icon" onclick="navBurger()">
-                                <i class="fa fa-bars"></i>
-                            </a>
-                               
-                        </ul>
+                    <div class="navbar-burger-line">
                     </div>
-                </nav>
-                
-                <!-- Image with name in front of it -->
-                <div class="logo">
-                    <h1>Eden Pound</h1>
+                    <div class="navbar-burger-line">
+                    </div>
                 </div>
-                
-            </header>  
-            <!-- id - Effect seperate instance. -->
-            <!-- class - Effect multiple instances. -->
-            <!-- div = Divider - Seperates elements. -->
-            <div class="content">
+                <div data-gjs="navbar-items" class="navbar-items-c">
+                    <nav data-gjs="navbar-menu" class="navbar-menu">
+                        <a href="https://www.artstation.com/WapourVave" class="navbar-menu-link">
+                            <i class="fa fa-paint-brush" aria-hidden="true"></i> ArtStation
+                        </a>
+                        <a href="https://github.com/WapourVave" class="navbar-menu-link">
+                            <i class="fa fa-github" aria-hidden="true"></i> GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/eden-pound-4990b41b2/" class="navbar-menu-link">
+                            <i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn
+                        </a>
+                        <a href="mailto:edenpound@gmail.com" class="navbar-menu-link">
+                            <i class="fa fa-envelope" aria-hidden="true"></i> Email
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Banner -->
+        <img id="Banner" src="Images/Banner/Banner.svg">
+        
+        <!-- Content -->
+        <div class="Container">
+            <div class="row" id="Text-Container">
+                <div class="cell" id="Text-Cell">
+                    <section class="bdg-sect">
+                        <h1 class="heading" id="Header-1">
+                            About Me
+                        </h1>
+                        <p class="paragraph">
+                            Hey, the names Eden, and I will be your Junior 3D Games Artist and Developer for today. I have an intense passion for all things video games, as well as a huge interest in 3D Modelling and Game Prototyping, so if you are in the business of video games I think we'll get along just fine!
+                        </p>
+                    </section>
+                </div>
+            </div>
             
-                <div class="aboutme">
-                    <!-- <h1> </h1> = Header 1 -->
-                    <!-- <h2> </h2> = Header 2 -->
-                    <!-- <h?> <h?> = Header ? - The Header value keeps increasing for a variety of preset sizes -->
-                    <a href="aboutme.html"><h2>About Me</h2></a>
-                    <!-- An "about me" like paragraph of text should be found here, filling up the section and introducing the purpose of the website in a short and snappy like fashion. -->
-
-                        <!-- Lorem Ipsum is the text content random thing -->
-                        <p>So, you thought you'd just stumble along this page without me noticing? Well it don't work like that round these parts! My name is Eden, a video games enthusiast and developer in training, I enjoy both playing video games with people and the concept of making a video game others will love to play!</p>
-
+            <!-- Contact Me! No, really, please do! -->
+            <div class="row" id="Text-Container">
+                <div class="cell" id="Text-Cell">
+                    <section class="bdg-sect">
+                        <h1 class="heading">
+                            Portfolio and Contact Info
+                        </h1>
+                        <div class="Border-Container linkBorder">
+                            <a href="https://www.artstation.com/WapourVave" class="borders" id="Border-Boxes-1">
+                                <i class="fa fa-paint-brush" aria-hidden="true"></i> ArtStation 
+                            </a>
+                            <a href="https://github.com/WapourVave" class="borders" id="Border-Boxes-2">
+                                <i class="fa fa-github" aria-hidden="true"></i> GitHub
+                            </a>
+                            <a href="https://www.linkedin.com/in/eden-pound-4990b41b2/" class="borders" id="Border-Boxes-3">
+                                <i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn
+                            </a>
+                            <a href="mailto:edenpound@gmail.com" class="borders" id="Border-Boxes-4">
+                                <i class="fa fa-envelope" aria-hidden="true"></i> Email
+                            </a>
+                        </div>
+                    </section>
                 </div>
-
-                <!-- 3DS Max -->
-                <div class="featurebox1"id=fb1>
-                    <div class="fbldiv">
-                        <a href="3dsmax.html"><img class="fblimage" id=fbli1 src="images/3dsmax/home_showcase.jpg" alt="3D Assets"></a>
-
-                    </div>
-                    
-                    <div class="fbltitle"id=fbt1>                         
-                        <h2><a href="3dsmax.html">3DS Max</a></h2>
-                    </div>
-                    
-                    <div class="fbltext">
-                            <p>3D asset development optimized for game engine's and scene creation is what I specialize in, creating high quality assets and environments by day, character rigging, skinning and animating by night. There's never a moment of the day were I don't have to have 3DS Max staring at me from my task bar, waiting...</p>
-                    </div>
-
+            </div>
+            
+            <!-- What Skills do we got? -->
+            <div class="row" id="Text-Container">
+                <div class="cell" id="Text-Cell">
+                    <section class="bdg-sect">
+                        <h1 class="heading">
+                            Skills
+                        </h1>
+                        <div class="Border-Container skillBoxes">
+                            <div class="borders" id="Skill-Boxes-1">
+                                <i class="fa fa-gamepad" aria-hidden="true"></i> Game Development 
+                            </div>
+                            
+                            <div class="borders" id="Skill-Boxes-2">
+                                <i class="fa fa-cube" aria-hidden="true"></i> 3D Modelling
+                            </div>
+                            
+                            <div class="borders" id="Skill-Boxes-5">
+                                <i class="fa fa-cubes" aria-hidden="true"></i> Enviromental Modelling
+                            </div>
+                            <div class="borders" id="Skill-Boxes-4">
+                                <i class="fa fa-code" aria-hidden="true"></i> Visual Scripting
+                            </div>
+                            
+                            <div class="borders" id="Skill-Boxes-3">
+                                <i class="fa fa-tree" aria-hidden="true"></i> Level Design
+                            </div>
+                            
+                            <div class="borders" id="Skill-Boxes-6">
+                                <i class="fa fa-square" aria-hidden="true"></i> Pixel Art
+                            </div>
+                            
+                            <div class="borders" id="Skill-Boxes-7">
+                                <i class="fa fa-camera" aria-hidden="true"></i> Photo-Manipulation
+                            </div>
+                            
+                        </div>
+                        
+                    </section>
                 </div>
-
-                <!-- Unreal 4 -->
-                <div class="featurebox2"id=fb2>
-                    <div class="fbrdiv">
-                        <a href="ue4.html"><img class="fbrimage" src="images/ue4/home_showcase.jpg" id=fbri1 alt="Unreal 4"></a>
-                    </div>
-                    
-                    <div class="fbrtitle"id=fbt2>                         
-                        <h2><a href="ue4.html">Unreal Engine 4</a></h2>
-                    </div>
-
-                    <div class="fbrtext">
-                            <p>When it comes to Unreal 4, I have a large array of skills varying between Blueprint development, sequence and character animation, scene development, practically everything you need for a good designer to get building and prototyping for a game concept. You name a concept and I can probably cook it up in a few hours.</p>
-                    </div>
-
+            </div>
+            
+            <!-- Software Proficiency -->
+            <div class="row" id="Text-Container">
+                <div class="cell" id="Text-Cell">
+                    <section class="bdg-sect">
+                        <h1 class="heading">
+                            Software Proficiency
+                        </h1>
+                        <div class="Border-Container softwareBoxes">
+                            <div class="borders" id="Software-Boxes-1">
+                                <img id="Software" src="Images/Software/3DSMax.png" width="16px" height="16px"> 3DS Max 
+                            </div>
+                            
+                            <div class="borders" id="Software-Boxes-2">
+                                <img id="Software" src="Images/Software/Unreal.png" width="16px" height="16px"> Unreal Engine
+                            </div>
+                            
+                            <div class="borders" id="Software-Boxes-3">
+                                <img id="Software" src="Images/Software/Unity.png" width="16px" height="16px"> Unity
+                            </div>
+                            
+                            <div class="borders" id="Software-Boxes-4">
+                                <img id="Software" src="Images/Software/Photoshop.png" width="16px" height="16px"> Photoshop
+                            </div>
+                            
+                            <div class="borders" id="Software-Boxes-5">
+                                <img id="Software" src="Images/Software/AffinityPhoto.png" width="16px" height="16px"> 
+                                Affinity Photo
+                            </div>
+                            
+                            <div class="borders" id="Software-Boxes-6">
+                                <img id="Software" src="Images/Software/AffinityDesigner.png" width="16px" height="16px"> Affinity Designer
+                            </div>
+                            
+                        </div>
+                        
+                    </section>
                 </div>
-                
-                <!-- UDK -->
-                <div class="featurebox1"id=fb3>
-                    <div class="fbldiv">
-                        <a href="udk.html"><img class="fblimage" src="images/udk/home_showcase.jpg" id=fbli2 alt="UDK"></a>
+            </div>
+            
+            <!-- Portfolio Work -->
+            <div class="row" id="Text-Container-Final">
+                <div class="cell" id="Text-Cell">
+                    <section class="bdg-sect">
+                        <h1 class="heading">
+                            Portfolio Work
+                        </h1>
+                        <div class="Border-Container portfolioBoxes">
+                            <a href="https://www.artstation.com/artwork/eaJA5Y" class="borders" id="Portfolio-Boxes-G1">
+                                <h1 class="heading">BotHop University Project</h1>
+                                <p>For my Major Project I was tasked with creating a video game, which led me to create a 3D Puzzle Game in which the Player must take control of a variety of different Robots with different abilities. This is done by using an ability known as BotHop, which allows any Robot to hop consciousness into another Robot so long as they can make direct line of sight.</p>
+                                <img id="Portfolio" src="Images/Portfolio/BotHop.jpg"> 
+                            </a>
+                            
+                            <a href="https://www.artstation.com/artwork/rA92PO" class="borders" id="Portfolio-Boxes-G2">
+                                <h1 class="heading">Crime Scene Recreation College Project</h1>
+                                <p>In this assignment, I was tasked with recreating an "Crime Scene" interactive Crime Scene using 3DS Max and Unreal Engine 4, and is one of my favorite pieces of work so far.</p>
+                                <img id="Portfolio" src="Images/Portfolio/CrimeScene.jpg"> 
+                            </a>
+                            
+                            <a href="https://www.artstation.com/artwork/lxRZ9Y" class="borders" id="Portfolio-Boxes-G1">
+                                <h1 class="heading">The Prisoner Chess University Project</h1>
+                                <p>This assignment was to make a game for a convention related to "The Prisoner", and so I chose chess as it provides a two player experience in a convention full of single player projects. The game had abilities to differentiate it, each being able to change the flow of the game and spawning every 10 turns in game.</p>
+                                <img id="Portfolio" src="Images/Portfolio/Prisoner.jpg"> 
+                            </a>
+                            
+                            <a href="https://www.artstation.com/artwork/WKmbyv" class="borders" id="Portfolio-Boxes-G2">
+                                <h1 class="heading">
+                                    Environmental Experimentation College Project 
+                                </h1>
+                                <p>This assignment was to make some household assets, which could then be used in a game.</p>
+                                <img id="Portfolio" src="Images/Portfolio/Enviromental.jpg"> 
+                            </a>
+                            
+                            <a href="https://www.artstation.com/artwork/B13y0m" class="borders" id="Portfolio-Boxes-G1">
+                                <h1 class="heading">My First Max College Project</h1>
+                                <p>My first time in 3D I decided to make an animation that takes place in a cel shades Desert, followed by a fly-through of an environment that ends with a Robot being constructed.</p>
+                                <img id="Portfolio" src="Images/Portfolio/MyFirst.jpg"> 
+                            </a>
+                            
+                            <a href="https://www.artstation.com/artwork/9mNk0q" class="borders" id="Portfolio-Boxes-G2">
+                                <h1 class="heading">Extinction Pixel Art Game College Project</h1>
+                                <p>Extinction was a 2D Pixel Art game made in GameMaker, and had the Player controlling a Planktalien during an invasion of an underground facility.</p>
+                                <img id="Portfolio" src="Images/Portfolio/Extinction.jpg"> 
+                            </a>
+                            
+                        </div>
                         
-                    </div>
-
-                    <div class="fbltitle"id=fbt3>                         
-                        <h2><a href="udk.html">Unreal Development Kit</a></h2>
-                    </div>
-                    
-                    <div class="fbltext">
-                            <p>While knowledge remains limited, UDK was the testing grounds for my first level within the Unreal Engine and taught me design philosophies I still use now, as well as showcasing just how far I have come now in terms of skill level. UDK may be old, but the lessons I learnt about level design were valuable.</p>
-                    </div>
-
+                    </section>
                 </div>
-
-                <!-- Photoshop -->
-                <div class="featurebox2"id=fb4>
-                    <div class="fbrdiv">
-                        <a href="photoshop.html"><img class="fbrimage" src="images/photoshop/home_showcase.jpg" id=fbri2 alt="Photoshop"></a>
-                    </div>
-                    
-                    <div class="fbrtitle"id=fbt4>                         
-                        <h2><a href="photoshop.html">Photoshop</a></h2>
-                    </div>
-
-                    <div class="fbrtext">
-                            <p>My skills within Photoshop range primarily with assisting in bigger projects, focusing on image manipulation, creation of seamless textures and UV Mapping. Whether it be creating planning documentation for a building or a skydome for a video game, I've got Photoshops back as long as Photoshop has mine.</p>
-                    </div>
-
-                </div>            
-                
-                <!-- Game Maker -->
-                <div class="featurebox1"id=fb5>
-                    <div class="fbldiv">
-                        <a href="gamemaker.html"><img class="fblimage" src="images/gamemaker/home_showcase.jpg" id=fbli3 alt="Game Maker"></a>
-
-                    <div class="fbltitle"id=fbt5>                         
-                        <h2><a href="gamemaker.html">Game Maker</a></h2>
-                    </div>
-                        
-                    </div>
-
-                    <div class="fbltext">
-                            <p>My skills in Game Maker are simple, I can create video games, as the name suggests. Need sprite based assets? Yeah, I have them. Need a platformer with a 2D momentum based physics engine? Been there, done that. Need a game with.. You know were I'm going with this. I make games alright, its what I do.</p>
-
-                    </div>                
-
-                </div>
-                
-                <!-- Copyright Footer -->
-                <footer>
-                    <p>© Eden J Pound 2018</p>    
-                </footer>
-                    
-                
-                        
-                        
-                        
-                <!-- YouTube Video Embed --> 
-    <!--
-
-                <iframe width="560px" height="315px" src="https://www.youtube.com/embed/rg6CiPI6h2g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    -->
-
-                <!-- Audio File -->
-    <!--
-                <audio controls>
-                    <source src="sound/pokerap.mp3" type="audio/mpeg">
-                    Go away, your browser is out of date and you cannot listen to this audio file.
-                </audio>
-    -->
-            </div>  
-         </div>
-        <!-- JavaScript Imports -->      
+            </div>
+            
+        </div>
         
-        <!-- JQuery 3.3.1 -->
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <!-- Bootstrap JS -->
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-        <!-- Navburger JS -->
-        <script src="js/navburger.js"></script>
-        <!-- Image Hover -->
-        <script src="js/imghover.js"></script>
+        <!-- Copyright Footer -->
+        <div class="copyright-footer">
+        © Eden J. Pound 2018 - 2020
+        </div>
         
-    </body>
+        <!-- Scripts -->
+        <script>var items = document.querySelectorAll('#ie2r');
+            for (var i = 0, len = items.length; i < len; i++) {
+                (function(){
+                    var e,t=0,n=function(){
+                        var e,t=document.createElement("void"),n={
+                            transition:"transitionend",OTransition:"oTransitionEnd",MozTransition:"transitionend",WebkitTransition:"webkitTransitionEnd"};
+                        for(e in n)if(void 0!==t.style[e])return n[e]}
+                    (),r=function(e){
+                        var t=window.getComputedStyle(e),n=t.display,r=(t.position,t.visibility,t.height,parseInt(t["max-height"]));
+                        if("none"!==n&&"0"!==r)return e.offsetHeight;
+                        e.style.height="auto",e.style.display="block",e.style.position="absolute",e.style.visibility="hidden";
+                        var i=e.offsetHeight;
+                        return e.style.height="",e.style.display="",e.style.position="",e.style.visibility="",i}
+                    ,i=function(e){
+                        t=1;
+                        var n=r(e),i=e.style;
+                        i.display="block",i.transition="max-height 0.25s ease-in-out",i.overflowY="hidden",""==i["max-height"]&&(i["max-height"]=0),0==parseInt(i["max-height"])?(i["max-height"]="0",setTimeout(function(){
+                            i["max-height"]=n+"px"}
+                            ,10)):i["max-height"]="0"}
+                    ,a=function(r){
+                        if(r.preventDefault(),!t){
+                            var a=this.closest("[data-gjs=navbar]"),o=a.querySelector("[data-gjs=navbar-items]");
+                            i(o),e||(o.addEventListener(n,function(){
+                                t=0;
+                                var e=o.style;
+                                0==parseInt(e["max-height"])&&(e.display="",e["max-height"]="")}
+                                                       ),e=1)}
+                    };
+                    "gjs-collapse"in this||this.addEventListener("click",a),this["gjs-collapse"]=1}
+                 .bind(items[i]))();
+            }
+        </script>
         
+    </head>
+    
 </html>

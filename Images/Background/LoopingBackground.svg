@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="16px" height="16px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g id="GreyBG" transform="matrix(1.24114e-17,0.202693,-0.405386,2.48228e-17,120.274,-53.3494)">
+        <use xlink:href="#_Image1" x="255" y="255" width="94px" height="48px"/>
+    </g>
+    <g id="HotPinkHexagons" transform="matrix(1,0,0,1,2,-3)">
+        <g transform="matrix(1.63196,-1.63196,0.52933,0.52933,-17.4861,30.6392)">
+            <path d="M6.664,6.468L17.923,6.468L6.664,6.468Z" style="fill:rgb(255,55,205);fill-opacity:0;stroke:rgb(32,32,32);stroke-width:1.21px;"/>
+        </g>
+        <g transform="matrix(1.63196,-1.63196,0.52933,0.52933,-17.4861,17.6392)">
+            <path d="M6.664,6.468L17.923,6.468L6.664,6.468Z" style="fill:rgb(255,55,205);fill-opacity:0;stroke:rgb(32,32,32);stroke-width:1.21px;"/>
+        </g>
+    </g>
+    <defs>
+        <image id="_Image1" width="94px" height="48px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAAAwCAYAAACYLM1EAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAjElEQVR4nO3QQREAIRDAsOVM4F8eKjgZfZAo6HSGxJqZ2XvfOuQl55z11RGvMj5ifMT4iPER4yPGR4yPGB8xPmJ8xPiI8RHjI8ZHjI8YHzE+YnzE+IjxEeMjxkeMjxgfMT5ifMT4iPER4yPGR4yPGB8xPmJ8xPiI8RHjI8ZHjI8YHzE+YnzE+IjxvOUH3UoEXDtgUbAAAAAASUVORK5CYII="/>
+    </defs>
+</svg>
