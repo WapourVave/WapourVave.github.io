@@ -30,16 +30,6 @@
     --Content-Text-Margin: 20px;
 }
 
-@font-face
-{
-    font-family: 'denmarkregular';
-    src: url('Fonts/denmark-webfont.woff2') format('woff2'),
-         url('Fonts/denmark-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
 /*--------FONT STYLES--------*/
 
 /* These are the fonts we wanna use */
