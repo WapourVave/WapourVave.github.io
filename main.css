@@ -179,6 +179,11 @@ a:hover
     display: none;
 }
 
+#Banner1
+{
+    display: block;
+}
+
 /*--------CONTENT--------*/
 
 /* Content Padding */
