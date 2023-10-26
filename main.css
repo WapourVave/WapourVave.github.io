@@ -254,6 +254,14 @@ a:hover
 .portfolioBoxes
 {
     margin-bottom: 0px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolioBoxes .heading
+{
+    width: 100%;
 }
 
 #Text-Container .portfolioBoxes 
@@ -269,12 +277,16 @@ a:hover
 .portfolioBoxes .borders 
 {
     margin-right: 0px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .portfolioBoxes img
 {
     width: 100%;
     height: auto;
+
+    padding-bottom: 4px;
 }
 
 /*--------COPYRIGHT FOOTER--------*/
@@ -394,12 +406,12 @@ a:hover
         margin-left: 2%;
         margin-right: 2%;
 */
-        display: inline-table;
+        /* display: inline-table; */
     }
     
     #Portfolio-Boxes-G1
     {
-        margin-right: 1%;
+        margin-right: 2%;
     }
 }
 
